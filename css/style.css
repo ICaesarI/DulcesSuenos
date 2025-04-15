@@ -1,0 +1,161 @@
+:root
+{
+    --fuentePrincipal: 'Public Sans', sans-serif;
+    --fuenteSecundaria: 'Cormorant', serif;
+    --fuenteTerciaria: 'Charm', sans-serif;
+   /*  --colorPrincipal: */ 
+
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+    --colorGris: #808080;
+    --colorCafe: #856229;
+
+}
+
+/* Globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem  = 10px*/
+}
+*,**:before,*:after{
+    box-sizing: inherit;
+}
+
+/*Utilziades*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{text-decoration: none;}
+
+h1,h2,h3,h4{font-family: var(--fuentePrincipal);line-height: 1.2;}
+
+h1{font-size: 4.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3.2rem;}
+h4{font-size: 2.8rem;}
+
+img{max-width: 100%;}
+
+.no-margin{margin: 0;}      
+.no-padding{padding: 0;}
+.centrar-texto{text-align: center;}
+
+body{
+    background-image: linear-gradient(to top, #DCB9A6 0%, var(--colorBlanco) 20%); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navegacion */
+.navegacion{
+    display: flex;
+    align-items: center;
+    
+}
+.navegacion--logo img {
+    max-width: 30%;
+    padding: 2rem;
+    justify-content: start;
+}
+.navegacion--home{
+    font-size: 4rem;
+    font-family: var(--fuenteTerciaria);
+    color: var(--colorCafe);
+    font-weight: normal;
+    transition: all 0.1s ease;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+@media (min-width: 1080px) 
+{
+    .navegacion--home{
+        margin-left: 30rem;
+    }
+}
+.navegacion--home h2:hover{
+    font-weight: 700;
+}
+
+/* Bannmer Cuna/Nido */
+.banner--contenedor {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+@media (min-width: 768px) 
+{
+    .banner--contenedor {
+        width: 75%;
+    }
+}
+.banner--imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Titulo "Nueva Coleccion" */
+.productos--titulo{
+    font-family: var(--fuenteTerciaria);
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #DCB9A6;
+    margin: 6rem 2rem;
+}
+
+/* Productos */
+.productos--contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px)
+{
+    .productos--contenedor{
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+.producto{
+    padding: 2rem;
+}
+.producto--imagen{
+    border-radius: 1.5%;
+}
+.producto--nombre{
+    font-family: var(----fuenteSecundaria);
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color:var(--colorCafe);
+}
+.producto--descripcion{
+    font-size: 1.5rem;
+    font-family: var(--fuentePrincipal);
+    color:var(--colorCafe);
+}
+.producto--precio{
+    font-size: 2rem;
+    margin: 0;
+    color:var(--colorCafe);
+    font-weight: bold;
+}
+.producto--precio span{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 768px) 
+{
+    .producto--doble{
+
+    }
+}
