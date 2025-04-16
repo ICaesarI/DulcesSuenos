@@ -51,28 +51,21 @@ body{
 .navegacion{
     display: flex;
     align-items: center;
-    
+    justify-content: space-around;
+    padding: 2rem;
 }
 .navegacion--logo img {
     max-width: 30%;
     padding: 2rem;
-    justify-content: start;
 }
 .navegacion--home{
+    display: flex;
+    gap: 5rem;
     font-size: 4rem;
     font-family: var(--fuenteTerciaria);
     color: var(--colorCafe);
     font-weight: normal;
     transition: all 0.1s ease;
-    text-align: center;
-    margin: 0 auto;
-    padding: 2rem;
-}
-@media (min-width: 1080px) 
-{
-    .navegacion--home{
-        margin-left: 30rem;
-    }
 }
 .navegacion--home h2:hover{
     font-weight: 700;
@@ -89,7 +82,7 @@ body{
 @media (min-width: 768px) 
 {
     .banner--contenedor {
-        width: 75%;
+        width: 70%;
     }
 }
 .banner--imagen{
@@ -115,6 +108,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    padding: 2rem;
 }
 @media (min-width: 768px)
 {
@@ -153,9 +147,33 @@ body{
 }
 
 
-@media (min-width: 768px) 
-{
-    .producto--doble{
-
-    }
+/* About Us*/
+.aboutUs--contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center ;
+    gap: 2rem;
+    padding: 3rem;
+    margin: 0 5rem;
+}
+.aboutUs--informacion{
+    color: var(--colorCafe);
+}
+.titulo--aboutUs{
+    font-family: var(--fuenteTerciaria);
+    font-size: 5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.titulo--aboutUs span{
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.linea--aboutUs{
+    border-bottom: solid 0.5rem var(--colorGris);
+    width: 65%;
+}
+.texto--aboutUs{
+    font-size: 2rem;
 }
