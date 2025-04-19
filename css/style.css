@@ -69,7 +69,6 @@ body{
     transition: all 0.1s ease;
 }
 .navegacion--home h2:hover{
-    font-weight: 700;
 }
 @media (min-width: 768px ) 
 {
@@ -78,7 +77,6 @@ body{
     }
 }
 .opcion--activa{
-    font-weight: 700;;
 }
 /* Bannmer Cuna/Nido */
 .banner--contenedor {
@@ -110,7 +108,7 @@ body{
     font-size: 3.5rem;
     font-weight: 400;
     color: #DCB9A6;
-    margin: 6rem 2rem;
+    margin: 2rem 0;
 }
 @media (min-width: 768px) 
 {
@@ -123,7 +121,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 @media (min-width: 768px)
 {
@@ -132,7 +130,7 @@ body{
     }
 } 
 .producto{
-    padding: 2rem;
+    padding: 1rem;
 }
 .producto--imagen{
     border-radius: 1.5%;
@@ -160,8 +158,41 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
 }
+/* Footer */
+.footer--contenedor{
+   
+    
+}
+.footer--texto{
+    font-family: var(--fuenteTerciaria);
+    font-size: 3rem;
+    color: var(--colorCafe);
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+.footer--redesSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+.footer--redesSociales__instagram,
+.footer--redesSociales__facebook{
+    display: flex;
+    align-items: center;
+    background-color: var(--colorBlanco);
 
+    border-radius: 50%;
+    padding: .5rem;
 
+}
+.footer--enlace:hover{
+    color: var(--colorCafe);
+    transform: scale(1.2);
+}
 /* About Us*/
 .aboutUs--contenedor{
     display: grid;
