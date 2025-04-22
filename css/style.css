@@ -133,7 +133,6 @@ body{
 {
     .productos--contenedor{
         width: 65%;
-        grid-template-columns: 1fr;
     }
 } 
 .producto{
