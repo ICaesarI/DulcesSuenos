@@ -69,6 +69,8 @@ body{
     transition: all 0.1s ease;
 }
 .navegacion--home h2:hover{
+    color: var(--colorCafe);
+    transform: scale(1.2);
 }
 @media (min-width: 768px ) 
 {
@@ -77,6 +79,8 @@ body{
     }
 }
 .opcion--activa{
+    color: var(--colorCafe);
+    font-weight: bold;
 }
 /* Bannmer Cuna/Nido */
 .banner--contenedor {
@@ -122,11 +126,13 @@ body{
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 1rem;
+    margin: o auto;
 }
-@media (min-width: 768px)
+@media (min-width: 900px)
 {
     .productos--contenedor{
-        grid-template-columns: repeat(4, 1fr);
+        width: 65%;
+        margin: 0 auto;
     }
 } 
 .producto{
@@ -134,6 +140,7 @@ body{
 }
 .producto--imagen{
     border-radius: 1.5%;
+    
 }
 .producto--nombre{
     font-family: var(----fuenteSecundaria);
@@ -147,22 +154,7 @@ body{
     font-family: var(--fuentePrincipal);
     color:var(--colorCafe);
 }
-.producto--precio{
-    font-size: 2rem;
-    margin: 0;
-    color:var(--colorCafe);
-    font-weight: bold;
-}
-.producto--precio span{
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
 /* Footer */
-.footer--contenedor{
-   
-    
-}
 .footer--texto{
     font-family: var(--fuenteTerciaria);
     font-size: 3rem;
@@ -237,4 +229,5 @@ body{
 }
 .aboutUs--imagen{
     width: 100%;
+    border-radius: 2%;
 }
