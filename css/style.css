@@ -123,16 +123,17 @@ body{
 /* Productos */
 .productos--contenedor{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
     gap: 2rem;
     padding: 1rem;
-    margin: o auto;
+    margin: 0 auto;
+    
 }
 @media (min-width: 900px)
 {
     .productos--contenedor{
         width: 65%;
-        margin: 0 auto;
+        grid-template-columns: 1fr;
     }
 } 
 .producto{
